@@ -1,7 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { CardsService } from '../../../core/services/cards.service';
-import { CardModel } from '../../models/car.model';
 import { Subscription } from 'rxjs';
+
+import { CardsService } from 'src/app/core/services/cards.service';
+import { CardModel } from 'src/app/main/models/car.model';
 
 @Component({
   selector: 'app-card-list',

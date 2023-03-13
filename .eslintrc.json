@@ -9,14 +9,11 @@
         "*.ts"
       ],
       "extends": [
-        "plugin:import/recommended",
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
         "plugin:@angular-eslint/recommended",
-        "airbnb-typescript/base",
-        "plugin:prettier/recommended"
+        "plugin:@angular-eslint/template/process-inline-templates"
       ],
-      "parserOptions": {
-        "project": ["tsconfig.json"]
-      },
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -33,8 +30,7 @@
             "prefix": "app",
             "style": "kebab-case"
           }
-        ],
-        "@typescript-eslint/no-unused-vars": "warn"
+        ]
       }
     },
     {

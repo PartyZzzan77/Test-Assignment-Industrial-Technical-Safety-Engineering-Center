@@ -6,7 +6,7 @@
   display: flex;
   gap: 1rem;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   border-radius: 1rem;
@@ -30,8 +30,16 @@
   }
 
   &__genre {
-    align-self: flex-start;
     color: inherit;
     word-break: break-word;
   }
+
+  &__genre,
+  &__year {
+    align-self: flex-start;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
 }

@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { CardModel } from '../models/car.model';
+
+import { CardModel } from 'src/app/main/models/car.model';
 
 @Pipe({
   name: 'genre',
