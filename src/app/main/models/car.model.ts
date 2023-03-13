@@ -1,8 +1,8 @@
-export interface Card {
-  "id": number,
-  "name": string,
-  "year": number,
-  "description":string
-  "genre": number[],
-  "thumbnail": string
+export interface CardModel {
+  id: number;
+  name: string;
+  year: number;
+  description: string;
+  genre: unknown[];
+  thumbnail: string;
 }

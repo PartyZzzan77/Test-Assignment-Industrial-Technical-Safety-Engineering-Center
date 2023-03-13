@@ -1,0 +1,37 @@
+.card {
+  max-width: 19rem;
+  min-height: 100%;
+  padding: 1.5rem 2rem;
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 1rem;
+  flex: 0 1 auto;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(29, 24, 56, 0.1);
+
+  &__title {
+    width: 100%;
+    font-weight: 600;
+    line-height: 1.6rem;
+    align-items: flex-start;
+    font-size: 1.4rem;
+  }
+
+  &__img {
+    max-width: 15rem;
+    min-height: 22.5rem;
+    border-radius: 1rem;
+  }
+
+  &__genre {
+    align-self: flex-start;
+    color: inherit;
+    word-break: break-word;
+  }
+}
