@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap');
+html,
+body {
+  font-size: 10px;
+  height: 100%;
+}
+body {
+  padding: 0 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}

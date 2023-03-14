@@ -1,0 +1,11 @@
+<mat-card class="card" (click)="toggleFavorites()">
+  <img class="card__img" mat-card-image src="{{card.thumbnail}}" alt="{{card.name}}">
+    <mat-card-title class="card__title">{{card.name}}</mat-card-title>
+    <mat-card-subtitle class="card__genre">{{card.genre}}</mat-card-subtitle>
+  <div class="card__actions">
+    <p class="card__year">
+      {{card.year}}
+    </p>
+    <mat-icon class="card_checked" *ngIf="isChecked">favorite</mat-icon>
+  </div>
+</mat-card>
