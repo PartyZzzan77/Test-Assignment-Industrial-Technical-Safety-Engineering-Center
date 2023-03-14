@@ -1,0 +1,4 @@
+<mat-form-field class="example-form-field">
+  <mat-label>{{label}}</mat-label>
+  <input #search matInput type="text" [(ngModel)]="value" (input)="searchFilm(search.value)">
+</mat-form-field>
