@@ -16,7 +16,6 @@ export class CardsService {
     [],
   );
   favorites$: Observable<CardModel[]> = this.favorites.asObservable();
-
   cards$: Observable<CardModel[]> = this.cards.asObservable();
 
   public toggleFavorites(card: CardModel) {

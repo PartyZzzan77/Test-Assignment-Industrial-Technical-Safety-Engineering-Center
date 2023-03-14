@@ -1,0 +1,33 @@
+.dialog {
+  padding: 1.5rem 2rem;
+  max-width: 76rem;
+  min-height: 25.5rem;
+  display: flex;
+  gap: 2rem;
+  color: black;
+
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(29, 24, 56, 0.1);
+
+  &__title {
+    padding: 0;
+    color: black;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+  }
+  &__img {
+    border-radius: 1rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1.8rem;
+    font-size: 1.4rem;
+  }
+}
