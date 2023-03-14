@@ -1,0 +1,20 @@
+<mat-dialog-content class="dialog mat-typography">
+  <img class="dialog__img" src='{{data.property.thumbnail}}' alt='{{data.property.name}}'/>
+  <div class="dialog__info">
+<mat-card-title class="dialog__title" mat-dialog-title>{{data.property.name}}</mat-card-title>
+  <p class="dialog__genre">{{data.property.genre}}</p>
+  <p class="dialog__year">{{data.property.year}}</p>
+  <p class="dialog__description">{{data.property.description}}</p>
+  <mat-dialog-actions class="dialog__actions" align="end">
+    <button
+      class="dialog__btn-close"
+      color="primary"
+      mat-button
+      [mat-dialog-close]="true"
+      cdkFocusInitial
+    (click)="toggleFavorites()"
+    >{{toggleTitle}}</button>
+    <button class="dialog__btn-fav" color="warn" mat-button mat-dialog-close>{{btnClose}}</button>
+  </mat-dialog-actions></div>
+</mat-dialog-content>
+

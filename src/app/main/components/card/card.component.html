@@ -8,4 +8,5 @@
     </p>
     <mat-icon class="card_checked" *ngIf="isChecked">favorite</mat-icon>
   </div>
+  <button *ngIf="isDetails" mat-button color="primary" (click)="openDialog($event)">More...</button>
 </mat-card>
