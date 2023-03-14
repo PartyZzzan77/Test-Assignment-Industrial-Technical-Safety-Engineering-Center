@@ -38,6 +38,15 @@
   &__year {
     align-self: flex-start;
   }
+  &__actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_checked {
+    align-self: flex-end;
+  }
 }
 
 .card:hover {

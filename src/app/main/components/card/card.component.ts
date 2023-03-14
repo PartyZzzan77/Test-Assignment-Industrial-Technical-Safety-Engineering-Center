@@ -12,8 +12,11 @@ export class CardComponent {
   @Input()
   card: CardModel;
 
+  isChecked: boolean;
+
   toggleFavorites() {
     this.cardService.toggleFavorites(this.card);
+    this.isChecked = !!this.cardService.favorites.value.length;
   }
 
   constructor(private cardService: CardsService) {}
