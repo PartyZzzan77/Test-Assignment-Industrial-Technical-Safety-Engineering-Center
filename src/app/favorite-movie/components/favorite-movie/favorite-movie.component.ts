@@ -23,7 +23,5 @@ export class FavoriteMovieComponent implements OnInit, OnDestroy {
     this.subscription.unsubscribe();
   }
 
-  constructor(private cardService: CardsService) {
-    console.log('mount');
-  }
+  constructor(private cardService: CardsService) {}
 }
